@@ -14,7 +14,7 @@ import { UseGuards } from '@nestjs/common';
 import { PaginationArgs } from 'src/common/pagination/pagination.args';
 import { UserEntity } from 'src/common/decorators/user.decorator';
 import { User } from 'src/users/models/user.model';
-import { GqlAuthGuard } from 'src/auth/gql-auth.guard';
+import { GqlAuthGuard } from 'src/common/guards/gql-auth.guard';
 import { PostIdArgs } from './args/post-id.args';
 import { UserIdArgs } from './args/user-id.args';
 import { Post } from './models/post.model';
