@@ -12,7 +12,7 @@ import config from 'src/common/configs/config';
 import { loggingMiddleware } from 'src/common/middleware/logging.middleware';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { GqlConfigService } from './gql-config.service';
-
+import { ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true, load: [config] }),

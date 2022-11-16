@@ -20,7 +20,7 @@ import { SecurityConfig } from 'src/common/configs/config.interface';
           signOptions: {
             expiresIn: securityConfig.expiresIn,
           },
-          privateKey: 'asdaafd',
+          secretOrPrivateKey: 'nestjsPrismaRefreshSecret',
         };
       },
       inject: [ConfigService],

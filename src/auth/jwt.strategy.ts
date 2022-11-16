@@ -9,13 +9,13 @@ import { JwtDto } from './dto/jwt.dto';
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(
     private readonly authService: AuthService,
-    readonly configService: ConfigService
+    readonly configService: ConfigService,
   ) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
       // secretOrKey: configService.get('JWT_ACCESS_SECRET'),
-      secretOrKey: 'nestasdsjkfhdsjfh',
+      secretOrKey: 'nestjsPrismaRefreshSecret',
     });
   }
 
